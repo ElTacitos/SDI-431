@@ -5,6 +5,7 @@
       <p>{{ el }}</p>
     </div>
     <button @click="reverseList">Reverse List</button>
+    <ProductList/>
   </div>
 </template>
 
