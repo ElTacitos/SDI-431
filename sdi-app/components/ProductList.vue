@@ -5,22 +5,21 @@
 <script setup lang="ts">
   import { ref, onMounted } from 'vue'
 
+  const config = useRuntimeConfig();
   const products = ref([])
-  const tok = "0e3d7147673970eb14f738d67890629d0d2c1f901aaf3fdefe1d342f642c24a5582eb7f8ab26003b7fbc70fe1562249c89a1a5303830b61f486d5c6f4115ec95d3960335777376fcaffc1339a536ec544a9e788145b24b129669410edf9acde7b780feff0198c0a8029f9f89642d0b318732461d3234f11139f61c17c0c6ae82"
-
-  const reponse = await useFetch('http://localhost:1337/api/products', {
+  const response = await useFetch(config.strapiApiUrl+'products', {
       headers: {
-        'Authorization': 'Bearer ' + tok,
+        'Authorization': 'Bearer ' + config.strapiToken,
         'Content-Type': 'application/json'
       }
     });
 
   onMounted(() => {
-    parseData(reponse)
+    parseData(response)
   })
 
-  function parseData(responce: any): void {
-    const data = responce.data;
+  function parseData(response: any): void {
+    const data = response.data;
     console.log(data)
     const value = data['_rawValue'].data;
     console.log(value)
