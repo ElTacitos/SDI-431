@@ -29,4 +29,4 @@ jobs:
           npm run generate
 
       - name: Push
-        run: aws s3 sync ./dist s3://tp-sdi
+        run: aws s3 sync .output/public s3://tp-sdi
