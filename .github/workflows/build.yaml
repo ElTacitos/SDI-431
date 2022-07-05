@@ -29,4 +29,5 @@ jobs:
           npm run generate
 
       - name: Push
-        run: aws s3 sync .output/public s3://tp-sdi
+        working-directory: ./sdi-app/
+        run: aws s3 cp /dist s3://tp-sdi/ --recursive
