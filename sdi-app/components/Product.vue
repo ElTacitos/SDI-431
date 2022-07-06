@@ -1,7 +1,13 @@
 <template>
-  <div>
-    {{ props.attributes.name }} - {{ props.attributes.color }}
-    <img :src="props.attributes.image" style="height: 10em" alt="img">
+  <div class="prodcutCard">
+    <h2> {{ props.attributes.name }} </h2>
+    <img class="productImage" :src="props.attributes.image" alt="img">
+    <span class="subTitle">
+      {{ props.attributes.color }} - {{props.attributes.size}} cm
+    </span>
+    <span>
+      {{ props.attributes.description }}
+    </span>
   </div>
 </template>
 
@@ -14,5 +20,29 @@
 </script>
 
 <style scoped>
+.prodcutCard {
+  border: black 0.15rem solid;
+  background: url("./assets/product.svg");
+  padding: 0.25rem;
+  font-family: 'JetBrains Mono', monospace;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+h2 {
+  padding: 0.5rem;
+  background: #FCBF49;
+}
+
+.subTitle {
+  font-size: 1.5rem;
+}
+
+.productImage {
+  width: auto;
+  height: 10rem;
+}
 </style>

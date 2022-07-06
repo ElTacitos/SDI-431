@@ -1,10 +1,13 @@
 <template>
-  <div>
+  <div class="main">
     <h1>SDI 431</h1>
+    <h2>The place you go to fill you fish tanks, socks drawers and tractor garages</h2>
     <ProductList/>
-    <button @click="startStrapi">Start Strapi</button>
-    <button @click="stopStrapi">Stop Strapi</button>
-    <a href="http://52.47.167.109:1337/admin">Strapi Admin</a>
+    <div class="footer">
+      <button @click="startStrapi">Start Strapi</button>
+      <button @click="stopStrapi">Stop Strapi</button>
+      <a href="http://52.47.167.109:1337/admin">Strapi Admin</a>
+    </div>
   </div>
 </template>
 
@@ -26,3 +29,48 @@
   }
 
 </script>
+
+<style scoped>
+h1{
+  font-family: "EricaOne",sans-serif;
+  font-size: 10rem;
+  font-weight: normal;
+  margin: -4rem 0 -2rem;
+}
+
+h2 {
+  font-family: "JetBrains Mono",sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 0 0 2rem;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.footer {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin: 1rem;
+
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.footer button {
+  background: #FCBF49;
+  border: black solid 0.15rem;
+  font-size: 1rem;
+}
+</style>
