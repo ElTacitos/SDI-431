@@ -1,8 +1,8 @@
 # workflow triggers
 on:
   push:
-    tags: ['store-front.*']
     branches: [main]
+    paths: [sdi-app/**]
   repository_dispatch:
     types: [ publish_blog ]
 
