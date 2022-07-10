@@ -21,10 +21,9 @@
 
 <style scoped>
 .prodcutCard {
-  border: black 0.15rem solid;
-  background: url("./assets/product.svg");
+  /* background: url("./assets/product.svg"); */
   padding: 0.25rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Manrope', monospace;
 
   display: flex;
   flex-direction: column;
@@ -34,7 +33,6 @@
 
 h2 {
   padding: 0.5rem;
-  background: #FCBF49;
 }
 
 .subTitle {
@@ -44,5 +42,6 @@ h2 {
 .productImage {
   width: auto;
   height: 10rem;
+  padding-bottom: 1.5rem;
 }
 </style>

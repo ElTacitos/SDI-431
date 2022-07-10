@@ -32,14 +32,15 @@
 
 <style scoped>
 h1{
-  font-family: "EricaOne",sans-serif;
-  font-size: 10rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 8rem;
   font-weight: normal;
-  margin: -4rem 0 -2rem;
+  margin: 0 0 0;
+  color: #9370DB;
 }
 
 h2 {
-  font-family: "JetBrains Mono",sans-serif;
+  font-family: "San Francisco",sans-serif;
   font-size: 1.5rem;
   font-weight: lighter;
   margin: 0 0 2rem;
@@ -61,7 +62,7 @@ h2 {
 
   margin: 1rem;
 
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'San Francisco', monospace;
   font-size: 1rem;
 
   position: absolute;
