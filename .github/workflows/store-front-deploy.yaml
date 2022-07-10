@@ -1,8 +1,8 @@
 # workflow triggers
 on:
   push:
-    branches:
-      - main
+    tags: ['store-front.*']
+    branches: [main]
   repository_dispatch:
     types: [ publish_blog ]
 
@@ -31,3 +31,6 @@ jobs:
       - name: Push
         working-directory: ./sdi-app/
         run: aws s3 cp ./.output/public s3://tp-sdi/ --recursive
+
+      - name: Clear Cloudfront Cache
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
