@@ -3,7 +3,7 @@
     <h2> {{ props.attributes.name }} </h2>
     <img class="productImage" :src="props.attributes.image" alt="img">
     <span class="subTitle">
-      {{ props.attributes.color }} - {{props.attributes.size}} cm
+      {{ props.attributes.color }} - {{ props.attributes.size }} cm
     </span>
     <span>
       {{ props.attributes.description }}
@@ -12,11 +12,11 @@
 </template>
 
 <script setup lang="ts">
-  const props = defineProps({
-    attributes: {
-      type: [Object],
-    }
-  })
+const props = defineProps({
+  attributes: {
+    type: [Object]
+  }
+})
 </script>
 
 <style scoped>
