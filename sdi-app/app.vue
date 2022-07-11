@@ -1,14 +1,16 @@
 <template>
-  <div>
+  <NuxtLayout>
     <Home />
-  </div>
+  </NuxtLayout>
 </template>
 
 <script>
-  import Home from "./components/Home";
-  export default {
-    components: {Home}
-  }
+import Home from './components/Home'
+import defaultVue from './layouts/default.vue'
+export default {
+  components: { Home },
+  layout: defaultVue
+}
 </script>
 
 <style>
@@ -22,11 +24,11 @@
   url("./assets/EricaOne-Regular.ttf") format("truetype");
 }
 
-
 body{
   background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(116,169,231,1) 100%); 
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(116,169,231,1) 100%);
   /* background: url("./assets/temple.svg"); */
   color: #ffffff;
+  margin: 0 !important;
 }
 </style>
