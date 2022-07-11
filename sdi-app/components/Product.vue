@@ -32,6 +32,8 @@ const props = defineProps({
   background-color: rgb(240, 239, 239);
   margin: 20px 0px;
   overflow-wrap: break-word;
+  max-width: 30em;
+  min-width: 30em;
 }
 
 h2 {
