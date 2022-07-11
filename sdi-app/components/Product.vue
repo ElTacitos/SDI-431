@@ -52,7 +52,7 @@ h2 {
 
 .description {
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-align: center;
 }
 </style>
