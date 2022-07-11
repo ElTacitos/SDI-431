@@ -42,12 +42,17 @@ h2 {
 
 .subTitle {
   font-size: 1.5rem;
-
 }
 
 .productImage {
   width: auto;
   height: 10rem;
   padding-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 </style>
