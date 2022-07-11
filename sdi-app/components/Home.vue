@@ -2,8 +2,8 @@
   <div class="main">
     <h1>SDI 431</h1>
     <h2>The place you go to fill you fish tanks, socks drawers and tractor garages</h2>
-    <ProductList/>
   </div>
+  <ProductList/>
 </template>
 
 <script setup lang="ts">
@@ -30,5 +30,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  margin: 8px;
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <nav class="nav">
-    <div class="logo-container nav-element left">
-      <img class="logo" src="logo_sdi.png" alt="logo">
+    <div class="nav-element left">
+      <img class="logo" src="logo_sdi.png">
     </div>
     <ul class="nav-element right">
-      <li>Produits</li>
+      <li href="/produits">Produits</li>
       <li>A propos</li>
       <li>Strapi</li>
       <li>Nous rejoindre</li>
@@ -39,10 +39,14 @@ export default {
 
 .nav>.left {
   background: #9370DB;
+  max-width: 10em;
+  min-width: 5em;
 }
 .nav>.right {
   background: white;
   color: #9370DB;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav ul {

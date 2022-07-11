@@ -9,6 +9,12 @@
 import Navbar from '~~/components/Navbar.vue'
 
 export default {
-  components: { Navbar }
+  components: { Navbar}
 }
 </script>
+
+<style scoped>
+body {
+  margin: 0 !important;
+}
+</style>

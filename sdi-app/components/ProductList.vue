@@ -38,6 +38,9 @@
   flex-wrap: wrap;
   gap: 5rem;
   align-items: center;
+  justify-content: center;
   align-content: center;
+  background-color: white;
+  padding: 10vh 8px;
 }
 </style>

@@ -29,5 +29,6 @@ body{
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(116,169,231,1) 100%);
   /* background: url("./assets/temple.svg"); */
   color: #ffffff;
+  margin: 0 !important;
 }
 </style>
