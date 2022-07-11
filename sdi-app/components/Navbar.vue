@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="nav-element left">
-      <img class="logo" src="logo_sdi.png">
+      <a>logo</a>
     </div>
     <ul class="nav-element right">
       <li href="/produits">Produits</li>
