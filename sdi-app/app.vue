@@ -25,9 +25,13 @@ export default {
 }
 
 body{
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(116,169,231,1) 100%);
+  /* background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(116,169,231,1) 100%); */
   /* background: url("./assets/temple.svg"); */
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   color: #ffffff;
   margin: 0 !important;
 }

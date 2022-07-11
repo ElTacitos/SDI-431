@@ -22,6 +22,7 @@ const props = defineProps({
 <style scoped>
 .prodcutCard {
   /* background: url("./assets/product.svg"); */
+  border: 1px solid grey;
   padding: 0.25rem;
   font-family: 'Manrope', monospace;
   color: black;

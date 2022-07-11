@@ -23,7 +23,7 @@ h1{
 h2 {
   font-family: "San Francisco",sans-serif;
   font-size: 1.5rem;
-  font-weight: lighter;
+  font-weight: normal;
   margin: 0 0 2rem;
   z-index: 1;
 }
