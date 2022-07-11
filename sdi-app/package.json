@@ -8,6 +8,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.7.1",
     "@nuxtjs/eslint-config": "^10.0.0",
     "eslint": "^8.18.0",
     "nuxt": "3.0.0-rc.4"

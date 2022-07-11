@@ -34,6 +34,8 @@ const props = defineProps({
   overflow-wrap: break-word;
   max-width: 30em;
   min-width: 30em;
+  border-radius: 25px;
+  text-align: center;
 }
 
 h2 {
@@ -41,18 +43,18 @@ h2 {
 }
 
 .subTitle {
+  padding-top: 1.5rem;
   font-size: 1.5rem;
 }
 
 .productImage {
   width: auto;
   height: 10rem;
-  padding-bottom: 1.5rem;
+  border-radius: 25px;
 }
 
 .description {
   font-size: 1rem;
   padding: 1.5rem;
-  text-align: center;
 }
 </style>

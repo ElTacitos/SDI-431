@@ -7,6 +7,7 @@
 </template>
 
 <script setup lang="ts">
+
 </script>
 
 <style scoped>
@@ -16,6 +17,7 @@ h1{
   font-weight: normal;
   margin: 0 0 0;
   color: #9370DB;
+  z-index: 1;
 }
 
 h2 {
@@ -23,6 +25,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: lighter;
   margin: 0 0 2rem;
+  z-index: 1;
 }
 
 .main{
@@ -31,5 +34,6 @@ h2 {
   align-items: center;
   align-content: center;
   margin: 8px;
+  height: 60vh;
 }
 </style>
