@@ -30,7 +30,7 @@ jobs:
 
       - name: Push
         working-directory: ./sdi-app/
-        run: aws s3 cp ./.output/public s3://tp-sdi/ --recursive
+        run: aws s3 sync ./.output/public s3://tp-sdi/
 
       - name: Clear Cloudfront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
