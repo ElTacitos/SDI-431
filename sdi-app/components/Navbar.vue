@@ -5,10 +5,12 @@
     </div>
     <ul class="nav-element right">
       <li href="/produits">Produits</li>
+      &nbsp;&nbsp;
       <li>A propos</li>
+      &nbsp;&nbsp;
       <li>Strapi</li>
+      &nbsp;&nbsp;
       <li>Nous rejoindre</li>
-      <li />
     </ul>
   </nav>
 </template>
@@ -47,6 +49,7 @@ export default {
   color: #9370DB;
   display: flex;
   justify-content: flex-end;
+  padding-right: 1rem;
 }
 
 .nav ul {
