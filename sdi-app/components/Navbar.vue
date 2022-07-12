@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="nav-element left">
-      <a>logo</a>
+      <!-- <img src="../assets/logo_sdi.png" alt="logo"> -->
     </div>
     <ul class="nav-element right">
       <li href="/produits">Produits</li>
@@ -40,7 +40,6 @@ export default {
 }
 
 .nav>.left {
-  background: #9370DB;
   max-width: 10em;
   min-width: 5em;
 }
@@ -58,8 +57,8 @@ export default {
   list-style-type: none;
 }
 
-.logo img {
-  max-height: 100%;
-  max-width: 100%;
+.img {
+  width: 100%;
+  height: 100%;
 }
 </style>
