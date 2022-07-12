@@ -7,7 +7,7 @@
   <div>
       <button @click="startStrapi">Start Strapi</button>
       <button @click="stopStrapi">Stop Strapi</button>
-      <a href="http://localhost:1337/admin">Strapi Admin</a>
+      <a href="http://52.47.167.109:1337/admin">Strapi Admin</a>
   </div>
 </template>
 
