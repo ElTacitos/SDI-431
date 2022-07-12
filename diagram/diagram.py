@@ -20,15 +20,16 @@ with Diagram("TD-SDI Architecture"):
 
         apiGateway - startStrapi - strapi
         apiGateway - stopStrapi - strapi
+        storeFront - apiGateway
 
 
         cloudFront = CF("CloudFront")
         cloudFront - storeFront
 
     githubAction = Custom("Github Action", "./github-action.png")
-    adminFront = Custom("admin.sdi.all-rights.fr", "./computer.png")
+    # adminFront = Custom("admin.sdi.all-rights.fr", "./computer.png")
     storePortal = Custom("sdi.all-rights.fr", "./computer.png")
 
     strapi - githubAction - storeFront
-    apiGateway - adminFront - strapi
-    cloudFront - storePortal
+    # apiGateway - adminFront - strapi
+    cloudFront - storePortal    
