@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="nav-element left">
-      <!-- <img src="../assets/logo_sdi.png" alt="logo"> -->
+      <img src="../assets/logo_sdi.png" alt="logo" width="30" height="30">
     </div>
     <ul class="nav-element right">
       <li href="/produits">Produits</li>
@@ -42,6 +42,8 @@ export default {
 .nav>.left {
   max-width: 10em;
   min-width: 5em;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 .nav>.right {
   background: white;
