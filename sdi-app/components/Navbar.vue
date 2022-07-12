@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="nav-element left">
-      <img src="../assets/logo_sdi.png" alt="logo" width="30" height="30">
+      <a>SDI-431</a>
     </div>
     <ul class="nav-element right">
       <li href="/produits">Produits</li>
@@ -42,8 +42,8 @@ export default {
 .nav>.left {
   max-width: 10em;
   min-width: 5em;
+  padding-top: 0.2em;
   padding-left: 1rem;
-  padding-top: 0.5rem;
 }
 .nav>.right {
   background: white;
@@ -62,5 +62,12 @@ export default {
 .img {
   width: 100%;
   height: 100%;
+}
+
+a {
+  color: #9370DB;
+  font-family: "EricaOne";
+  font-size: 1.5em;
+  font-weight: bold;
 }
 </style>
