@@ -8,6 +8,14 @@
 import Home from './components/Home'
 import defaultVue from './layouts/default.vue'
 export default {
+  head () {
+    return {
+      title: "SDI-431",
+      meta: [
+        { hid: 'description', name: 'description', content: 'description' }
+      ]
+    }
+  },
   components: { Home },
   layout: defaultVue
 }
@@ -32,6 +40,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  backdrop-filter: blur(5px);
   color: #ffffff;
   margin: 0 !important;
 }
