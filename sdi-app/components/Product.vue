@@ -32,11 +32,13 @@ const props = defineProps({
   align-content: center;
   background-color: rgb(240, 239, 239);
   margin: 20px 0px;
-  overflow-wrap: break-word;
+  overflow-wrap:normal;
+  text-overflow: ellipsis;
   max-width: 30em;
   min-width: 30em;
-  border-radius: 25px;
+  border-radius: 10px;
   text-align: center;
+  max-height: 100vh;
 }
 
 h2 {
@@ -51,7 +53,7 @@ h2 {
 .productImage {
   width: auto;
   height: 10rem;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .description {
