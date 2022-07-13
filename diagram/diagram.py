@@ -27,9 +27,9 @@ with Diagram("TD-SDI Architecture"):
         cloudFront - storeFront
 
     githubAction = Custom("Github Action", "./github-action.png")
-    # adminFront = Custom("admin.sdi.all-rights.fr", "./computer.png")
+    strapiFront = Custom("52.47.167.109:1337/admin", "./computer.png")
     storePortal = Custom("sdi.all-rights.fr", "./computer.png")
 
     strapi - githubAction - storeFront
-    # apiGateway - adminFront - strapi
-    cloudFront - storePortal    
+    strapiFront - strapi
+    cloudFront - storePortal
